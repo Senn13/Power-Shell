@@ -1,5 +1,4 @@
 # Powershell Theme
-# oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH/dracula.omp.json" | Invoke-Expression
 $omp_config = Join-Path $PSScriptRoot ".\michael.omp.json"
 oh-my-posh --init --shell pwsh --config $omp_config | Invoke-Expression
 
