@@ -1,0 +1,79 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "blocks": [
+    {
+      "alignment": "left",
+      "segments": [
+        {
+          "background": "#7aa2f7",
+          "foreground": "#d5d6db",
+          "powerline_symbol": "\ue0b4",
+          "leading_diamond": "\u256d\u2500\ue0b6",
+          "style": "diamond",
+          "template": " {{.Icon}} | ",
+          "type": "os"
+        },
+        {
+          "background": "#7aa2f7",
+          "foreground": "#d5d6db",
+          "powerline_symbol": "\ue0b4",
+          "style": "diamond",
+          "template": "{{ .UserName }}@{{ .HostName }} ",
+          "type": "session"
+        },
+        {
+          "background": "#bb9af7",
+          "foreground": "#d5d6db",
+          "powerline_symbol": "\ue0b4",
+          "properties": {
+            "style": "full",
+            "enable_hyperlink": true
+          },
+          "style": "powerline",
+          "template": " \uf7db {{ .Path }} ",
+          "type": "path"
+        },
+        {
+          "background": "#ff9e64",
+          "foreground": "#d5d6db",
+          "powerline_symbol": "\ue0b4",
+          "properties": {
+            "branch_icon": "",
+            "fetch_stash_count": true,
+            "fetch_status": false,
+            "fetch_upstream_icon": true
+          },
+          "style": "powerline",
+          "template": " \ue725 ({{ .UpstreamIcon }}{{ .HEAD }}{{ if gt .StashCount 0 }} \uf692 {{ .StashCount }}{{ end }}) ",
+          "type": "git"
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "foreground": "#7aa2f7",
+          "style": "plain",
+          "template": "\u2570\u2500",
+          "type": "text"
+        },
+        {
+          "foreground": "#7aa2f7",
+          "foreground_templates": ["{{ if gt .Code 0 }}#f7768e{{ end }}"],
+          "properties": {
+            "always_enabled": true
+          },
+          "style": "plain",
+          "template": "\u276f",
+          "type": "exit"
+        }
+      ],
+      "type": "prompt"
+    }
+  ],
+  "final_space": true,
+  "version": 2
+}
