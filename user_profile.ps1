@@ -1,5 +1,7 @@
 # Powershell Theme
-oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH/dracula.omp.json" | Invoke-Expression
+# oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH/dracula.omp.json" | Invoke-Expression
+$omp_config = Join-Path $PSScriptRoot ".\michael.omp.json"
+oh-my-posh --init --shell pwsh --config $omp_config | Invoke-Expression
 
 # PowerShell UTF-8
 [console]::InputEncoding = [console]::OutputEncoding = New-Object System.Text.UTF8Encoding
@@ -24,6 +26,7 @@ Set-PSReadLineOption -EditMode Emacs
 Set-PSReadLineOption -BellStyle None
 
 # Alias
+Set-Alias c cls
 Set-Alias ll ls
 Set-Alias g git
 Set-Alias grep findstr
