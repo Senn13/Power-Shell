@@ -10,7 +10,7 @@
           "powerline_symbol": "\ue0b4",
           "leading_diamond": "\u256d\u2500\ue0b6",
           "style": "diamond",
-          "template": " {{.Icon}} | ",
+          "template": " {{.Icon}}",
           "type": "os"
         },
         {
@@ -18,7 +18,7 @@
           "foreground": "#d5d6db",
           "powerline_symbol": "\ue0b4",
           "style": "diamond",
-          "template": "{{ .UserName }}@{{ .HostName }} ",
+          "template": " {{ .UserName }}@{{ .HostName }} ",
           "type": "session"
         },
         {
@@ -44,7 +44,7 @@
             "fetch_upstream_icon": true
           },
           "style": "powerline",
-          "template": " \ue725 ({{ .UpstreamIcon }}{{ .HEAD }}{{ if gt .StashCount 0 }} \uf692 {{ .StashCount }}{{ end }}) ",
+          "template": " {{ .UpstreamIcon }}{{ .HEAD }}{{ if gt .StashCount 0 }} \ue725 {{ end }} ",
           "type": "git"
         }
       ],
