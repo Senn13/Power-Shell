@@ -6,21 +6,23 @@
       "segments": [
         {
           "background": "#bd93f9",
+          "powerline_symbol": "\ue0b0",
+          "style": "powerline",
+          "template": " {{ .Path }} ",
+          "type": "path",
           "properties": {
             "style": "full"
-          },
-          "style": "plain",
-          "template": " {{ .Path }} ",
-          "type": "path"
+          }
         },
         {
           "background": "#f1fa8c",
-          "style": "plain",
+          "powerline_symbol": "\ue0b0",
+          "style": "powerline",
+          "template": " {{ .HEAD }} ",
+          "type": "git",
           "properties": {
             "branch_icon": ""
-          },
-          "template": " {{ .HEAD }} ",
-          "type": "git"
+          }
         }
       ],
       "type": "prompt"
