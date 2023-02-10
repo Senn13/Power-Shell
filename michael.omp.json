@@ -5,90 +5,22 @@
       "alignment": "left",
       "segments": [
         {
-          "background": "#7aa2f7",
-          "foreground": "#d5d6db",
-          "powerline_symbol": "\ue0b4",
-          "leading_diamond": "\u256d\u2500\ue0b6",
-          "style": "diamond",
-          "template": " {{.Icon}}",
-          "type": "os"
-        },
-        {
-          "background": "#7aa2f7",
-          "foreground": "#d5d6db",
-          "powerline_symbol": "\ue0b4",
-          "style": "diamond",
-          "template": " {{ .UserName }}@{{ .HostName }} ",
-          "type": "session"
-        },
-        {
-          "background": "#bb9af7",
-          "foreground": "#d5d6db",
-          "powerline_symbol": "\ue0b4",
+          "background": "#bd93f9",
           "properties": {
-            "style": "full",
-            "enable_hyperlink": true
+            "style": "full"
           },
-          "style": "powerline",
-          "template": " \uf7db {{ .Path }} ",
+          "style": "plain",
+          "template": " {{ .Path }} ",
           "type": "path"
         },
         {
-          "background": "#ff9e64",
-          "foreground": "#d5d6db",
-          "powerline_symbol": "\ue0b4",
+          "background": "#f1fa8c",
+          "style": "plain",
           "properties": {
-            "branch_icon": "",
-            "fetch_stash_count": true,
-            "fetch_status": false,
-            "fetch_upstream_icon": true
+            "branch_icon": ""
           },
-          "style": "powerline",
-          "template": " {{ .UpstreamIcon }}{{ .HEAD }}{{ if gt .StashCount 0 }} \ue725 {{ end }} ",
+          "template": " {{ .HEAD }} ",
           "type": "git"
-        },
-        {
-          "background": "#f7768e",
-          "foreground": "#d5d6db",
-          "powerline_symbol": "\ue0b4",
-          "style": "powerline",
-          "template": " \ue20f ",
-
-          "type": "exit"
-        },
-        {
-          "background": "#9ece6a",
-          "foreground": "#d5d6db",
-          "properties": {
-            "time_format": "\uf64f 3:4 PM | \uF5EF Mon, Jan 2, 2006. "
-          },
-          "style": "diamond",
-          "template": " {{ .CurrentDate | date .Format }}",
-          "trailing_diamond": "\ue0b4",
-          "type": "time"
-        }
-      ],
-      "type": "prompt"
-    },
-    {
-      "alignment": "left",
-      "newline": true,
-      "segments": [
-        {
-          "foreground": "#7aa2f7",
-          "style": "plain",
-          "template": "\u2570\u2500",
-          "type": "text"
-        },
-        {
-          "foreground": "#7aa2f7",
-          "foreground_templates": ["{{ if gt .Code 0 }}#f7768e{{ end }}"],
-          "properties": {
-            "always_enabled": true
-          },
-          "style": "plain",
-          "template": "\u276f",
-          "type": "exit"
         }
       ],
       "type": "prompt"
