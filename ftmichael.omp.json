@@ -5,7 +5,15 @@
       "alignment": "left",
       "segments": [
         {
+          "background": "#6272a4",
+          "foreground": "#f8f8f2",
+          "style": "powerline",
+          "template": " {{ .UserName }}@{{ .HostName }} ",
+          "type": "session"
+        },
+        {
           "background": "#bd93f9",
+          "foreground": "#f8f8f2",
           "powerline_symbol": "\ue0b0",
           "style": "powerline",
           "template": " {{ .Path }} ",
@@ -16,6 +24,7 @@
         },
         {
           "background": "#f1fa8c",
+          "foreground": "#f8f8f2",
           "powerline_symbol": "\ue0b0",
           "style": "powerline",
           "template": " {{ .HEAD }} ",
