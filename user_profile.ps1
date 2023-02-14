@@ -14,9 +14,11 @@ Import-Module z
 # PSReadLine (Install-Module -Name PSReadLine)
 Import-Module PSReadLine
 Set-PSReadLineOption -PredictionSource History
-Set-PSReadLineOption -PredictionViewStyle InlineView
+Set-PSReadLineOption -PredictionViewStyle ListView
 
 # Alias
+Set-Alias v nvim
+Set-Alias vim nvim
 Set-Alias ll ls
 Set-Alias g git
 Set-Alias grep findstr
