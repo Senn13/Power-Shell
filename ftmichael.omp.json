@@ -5,33 +5,35 @@
       "alignment": "left",
       "segments": [
         {
-          "background": "#6272a4",
-          "foreground": "#f8f8f2",
-          "style": "powerline",
-          "template": " {{ .UserName }}@{{ .HostName }} ",
+          "foreground": "#8be9fd",
+          "style": "plain",
+          "template": "{{ .UserName }}@{{ .HostName }}",
           "type": "session"
         },
         {
-          "background": "#bd93f9",
-          "foreground": "#f8f8f2",
-          "powerline_symbol": "\ue0b0",
-          "style": "powerline",
-          "template": " {{ .Path }} ",
+          "foreground": "#ff79c6",
+          "style": "plain",
+          "template": " <#f8f8f2>in</> {{ .Path }}",
           "type": "path",
           "properties": {
-            "style": "full"
+            "style": "full",
+            "folder_separator_icon": "/"
           }
         },
         {
-          "background": "#f1fa8c",
-          "foreground": "#f8f8f2",
-          "powerline_symbol": "\ue0b0",
-          "style": "powerline",
-          "template": " {{ .HEAD }} ",
+          "foreground": "#f1fa8c",
+          "style": "plain",
+          "template": " <#f8f8f2>on</> {{ .HEAD }}",
           "type": "git",
           "properties": {
             "branch_icon": ""
           }
+        },
+        {
+          "foreground": "#50fa7b",
+          "style": "plain",
+          "template": " $",
+          "type": "text"
         }
       ],
       "type": "prompt"
