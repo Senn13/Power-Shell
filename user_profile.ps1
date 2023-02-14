@@ -14,7 +14,7 @@ Import-Module z
 # PSReadLine (Install-Module -Name PSReadLine)
 Import-Module PSReadLine
 Set-PSReadLineOption -PredictionSource History
-Set-PSReadLineOption -PredictionViewStyle ListView
+Set-PSReadLineOption -PredictionViewStyle InlineView
 
 # Alias
 Set-Alias ll ls
