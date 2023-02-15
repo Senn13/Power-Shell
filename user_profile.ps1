@@ -1,4 +1,4 @@
-# Theme (Dracula Customization)
+# Theme
 $omp_config = Join-Path $PSScriptRoot ".\ftmichael.omp.json"
 oh-my-posh --init --shell pwsh --config $omp_config | Invoke-Expression
 
