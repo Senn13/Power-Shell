@@ -5,15 +5,13 @@
       "alignment": "left",
       "segments": [
         {
-          "background": "#565f89",
-          "foreground": "#1a1b26",
+          "background": "#6272a4",
           "style": "powerline",
           "template": " {{ .UserName }}@{{ .HostName }} ",
           "type": "session"
         },
         {
-          "background": "#7dcfff",
-          "foreground": "#1a1b26",
+          "background": "#8be9fd",
           "powerline_symbol": "\ue0b0",
           "style": "powerline",
           "template": " {{ .Path }} ",
@@ -24,8 +22,7 @@
           }
         },
         {
-          "background": "#e0af68",
-          "foreground": "#1a1b26",
+          "background": "#f1fa8c",
           "powerline_symbol": "\ue0b0",
           "style": "powerline",
           "template": " {{ .HEAD }} ",
